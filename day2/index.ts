@@ -11,12 +11,11 @@ const calculateOpcode = (noun: number, verb: number): Array<number> => {
   opCodeCopy[1] = noun;
   opCodeCopy[2] = verb;
 
-  let index = 0;
-  while (index < haltIndex) {
-    const col0 = opCodeCopy[index];
-    const col1 = opCodeCopy[index + 1];
-    const col2 = opCodeCopy[index + 2];
-    const col3 = opCodeCopy[index + 3];
+  for (let i = 0; i < haltIndex; i += 4) {
+    const col0 = opCodeCopy[i];
+    const col1 = opCodeCopy[i + 1];
+    const col2 = opCodeCopy[i + 2];
+    const col3 = opCodeCopy[i + 3];
 
     if (col0 === 1) {
       opCodeCopy[col3] = opCodeCopy[col1] + opCodeCopy[col2];
@@ -25,8 +24,6 @@ const calculateOpcode = (noun: number, verb: number): Array<number> => {
     } else {
       throw new Error('Invalid OpCode');
     }
-
-    index += 4;
   }
 
   return opCodeCopy;
