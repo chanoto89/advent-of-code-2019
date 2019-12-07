@@ -1,0 +1,26 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "advent": "$(npm bin)/ts-node --transpile-only",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^12.12.14"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "ts-node": "8.3.0",
+    "tsc": "^1.20150623.0",
+    "tslint": "5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "8.0.1",
+    "tslint-no-focused-test": "^0.5.0",
+    "tslint-no-unused-expression-chai": "0.1.4",
+    "typescript": "3.5.2"
+  }
+}
