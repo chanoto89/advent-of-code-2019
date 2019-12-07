@@ -1,7 +1,6 @@
 import input from './input.json';
 
-// TODO: fix this cuz this is kinda cheating but i'm a little lazy to find the first instance of 99 at % 4
-const haltIndex = input.lastIndexOf(99);
+const haltIndex = input.findIndex((val, idx) => val === 99 && idx % 4 === 0);
 
 const calculateOpcode = (noun: number, verb: number): Array<number> => {
   const opCodeCopy = [...input];
