@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "advent": "$(npm bin)/ts-node --transpile-only",
+    "build": "npm run clean && $(npm bin)/tsc -p tsconfig.json",
+    "clean": "rm -rf ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
