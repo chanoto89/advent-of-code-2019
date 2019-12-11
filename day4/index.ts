@@ -1,3 +1,4 @@
+console.time('RUN');
 const inputMin = 125730;
 const inputMax = 579381;
 
@@ -47,6 +48,7 @@ const checkPasswordRange = (minRange: number, maxRange: number) => {
 
 const totalMatches = checkPasswordRange(inputMin, inputMax);
 console.log('Total Passwords filling condition: ', totalMatches);
+console.timeEnd('RUN');
 
 // Part 1
 
