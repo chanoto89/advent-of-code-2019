@@ -47,7 +47,7 @@ const calculateOpCodeRules = (opCode: number): OpCodeRules => {
 };
 
 const calculateAmplifiersOutput = (amplifierState: AmplifierState): void => {
-  let { map, machineNumber, inputs, outputs } = amplifierState;
+  let { map, inputs, outputs } = amplifierState;
 
   for (amplifierState.pointer; amplifierState.pointer < map.length; ) {
     const opCodeRules = calculateOpCodeRules(map[amplifierState.pointer]);
