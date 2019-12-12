@@ -139,7 +139,7 @@ const calculateOpcodeOutputs = (systemId: number): number[] => {
 
 // NOTE: provide the sytemId the value of 1, the ID for the ship's air conditioner unit
 console.time('Run');
-const systemId = 1;
+const systemId = 2;
 const opCodeOutputs = calculateOpcodeOutputs(systemId);
 
 if (!opCodeOutputs.length) {

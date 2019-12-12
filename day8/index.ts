@@ -1,4 +1,4 @@
-import { image, image2 } from './input.json';
+import { image } from './input.json';
 
 // Answer HGBCF (check output.json)
 
